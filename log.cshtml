@@ -1,0 +1,26 @@
+﻿@model commerce.Models.users
+@{
+    ViewData["Title"] = "log";
+}
+
+
+
+<form method="post" asp-controller="login" asp-action="login">
+    
+
+    <div>
+        <input asp-for="Email" id="Email" type="text" placeholder="Email" required="">
+    </div>
+    <div>
+        <input asp-for="password" id="password" type="password" placeholder="Password" required="">
+    </div>
+    <div>
+        <a>
+            <label class="checkbox1"><input type="checkbox" name="checkbox"><i> </i>Forget Password</label>
+        </a>
+        <label>
+            <input type="submit" value="login">
+        </label>
+    </div>
+
+</form>
